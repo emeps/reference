@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        #link_1:link, #link1:visited{
+            color: #fff2af;
+            font-family: 'Courier New', Courier, monospace;
+            border: 5px solid #98002e;
+            margin: 60px;
+            padding: 15px 25px;
+            background-color: #5569a2;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: copy;        
+        }
+        #link_1:hover,#link_1:active{
+            background-color: red;
+        }
+        #link_2{
+            color: #fff2af;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 5px solid #5569a9;
+            margin: inherit;
+            padding: 10%;
+            background-color: #98002e;
+        }
+        #amanda{
+            width: 150px;
+            height: 324px;
+            border: 5px;
+            margin: auto;
+            cursor: zoom-in;
+            padding: 15%;
+        }
+        a:link{
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited{
+            color:#98002e;
+            background-color: #5569a9;
+            text-decoration: solid;
+        }
+        a:hover{
+            color: #5569a9;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:active{
+            color:yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="C4">Criando marcador</h1>
+    <a id="link_1" href="https://google.com" >GOOGLE <br> </a>
+    <p><br><br><br><br><br>Target:</p>
+    <pre>    
+        <ol>
+            <li>_blank: Abre o doc em nova janela  </li>
+            <li>_self: Abre o doc vinculado na mesma janela </li>
+            <li>_parent: Abre doc vinculado ao quadro pai </li>
+            <li>_top: Abre o documento vinculado no corpo inteiro da janela </li>
+            <li>framename: Abre o documento vinculado em um quadro nomeado</li>
+        </ol>
+    </pre>
+    <a id="link_2" href="https://uol.com.br" target="_blank">UOL <br> </a>
+    <a href="http://google.com" target="_blank">
+        <img src="https://i.redd.it/2t1nol6ndu641.jpg" alt="Amanda Nude" id="amanda">
+    </a>
+    <button title="Go way" onclick="document.location = 'https://i.redd.it/2t1nol6ndu641.jpg'">
+    <h2>CLK</h2>
+    </button>
+    <a href="/html/default.asp" target="_blank">Este exemplo vincula a uma página localizada na pasta html no site atual:</a>
+    <h2>--------------------------------------------------------</h2>
+    <a href="#C4"> Vai até o marcador</a>
+
+</body>
+</html>

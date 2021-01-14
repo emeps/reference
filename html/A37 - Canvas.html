@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <div>
+        <h1>Canvas</h1>
+        <p>
+            O canvas é um elemento usado para desenhar graficos via javascript.
+        </p>
+        <canvas id="canvas" width="300" height="300" style="border: 3px solid #000000;"></canvas>
+    </div>
+    <script>
+        var c = document.getElementById("canvas");
+        var ct = c.getContext("2d");
+        ct.moveTo(10,10);
+        ct.lineTo(200,100);
+        ct.stroke();
+        ct.beginPath();
+        ct.arc(95,50,40,0,2*Math.PI);
+        ct.stroke();
+        ct.font = "30px Arial";
+        ct.fillText("Hellow World",10,50);
+        ct.strokeText("Hellow World",20,100);
+    </script>
+</body>
+</html>

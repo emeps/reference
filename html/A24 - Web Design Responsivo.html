@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        p{
+            font-size: 10vw;
+        }
+        * {
+  box-sizing:border-box;
+}
+
+.left {
+  background-color:#2196F3;
+  padding:20px; 
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.main {
+  background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+  width:60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color:#4CAF50;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+    </style>
+</head>
+<body>
+    <img  src="/HTML/img/25601600.jpg" alt="Imagem">
+    <picture>
+        <source srcset="/HTML/512512.png" media="(max-width:600px)">
+        <source srcset="512512.png" media="(max-width:1500px)">
+        <source srcset="512512.png">
+            <img src="/HTML/512512.png" alt="Frango">
+    </picture>
+    <p>Eu quero saber quem gosta de comer cu de curioso</p>
+
+    <h2>Media Queries</h2>
+    <p>Resize the browser window.</p>
+
+    <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+    <div class="left">
+        <p>Left Menu</p>
+    </div>
+
+    <div class="main">
+        <p>Main Content</p>
+    </div>
+
+    <div class="right">
+        <p>Right Content</p>
+    </div>
+</body>
+</html>

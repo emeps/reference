@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+</head>
+
+<body>
+    <div>
+        <h1>Atributo Form</h1>
+        <p>Ele especifica o input a qual o formulario ele pertence</p>
+        <form action="" id="form1">
+            <label for="name" id="name">Nome</label>
+            <input type="text" id="name" name="name"> <br>
+            <input type="submit" value="Submit">
+        </form>
+        <label for="lastname" id="lastname">Sobrenome</label>
+        <input type="text" id="lastname" name="lastname" form="form1">
+    </div>
+    <div>
+        <h1>Atributo Formaction</h1>
+        <p>Especifica o endereço URL do arquivo que ira processar o formulario quando enviado.</p>
+        <p>Indicado para submit e image</p>
+        <form action="/HTML/A1 - Introduction.html" method="post">
+            <label for="21"> Nome </label>
+            <input type="text" id="21" name="21"> <br>
+            <input type="submit" value="Submit">
+            <input type="submit" formaction="/HTML/A1 - Introduction.html" value="Sub Admin">
+        </form>
+    </div>
+    <div>
+        <h1>Formenctype</h1>
+        <p>Especifica como os dados devem ser codificado quando enviados.</p>
+        <p>Substitui o enctype do elemento form. uso somente me POST</p>
+        <form action="" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome"> <br><br>
+            <input type="submit" value="Submit Normal">
+            <input type="submit" value="Submit Retardado" formenctype="multipart/form-data">
+        </form>
+    </div>
+    <div>
+        <h1>Formmethod</h1>
+        <form action="/action_page.php" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit using GET">
+            <input type="submit" formmethod="post" value="Submit using POST">
+        </form>
+    </div>
+    <div>
+        <h1>Formtarget</h1>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+        </form>
+    </div>
+    <div>
+        <h1>Formnovalidate</h1>
+        <form action="/action_page.php">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/action_page.js">
+        <label for="fname">Primeiro Nome</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Ultimo Nome</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <p>
+            Label é um rotulo para diverso elementos do formulario,
+            Muito util para leitores de tela.
+            O atibuto for tem que ser igual ao atributo id do elemento input.
+        </p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">female</label><br>
+        <input type="radio" id="outher" name="gender" value="outher">
+        <label for="other">Outro</label><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>
+        <h1>Submit</h1>
+        define um botão para enviar os dados do formulário para um manipulador de formulários.
+        O manipulador de formulários geralmente é uma página no servidor com um script para processar dados de entrada.
+        O manipulador de formulários é especificado no atributo de ação do formulário.
+        <h1>Atributo Action</h1>
+        Atributo que define a ação a ser executada quando o formulario é enviado.
+        <h1>Atributo target</h1>
+        O target atributo especifica se o resultado enviado sera aberto em uma nova guia.
+        Valor padão "_self" sera enviado na janela atual.
+        <h1>Atributo method</h1>
+        O atributo especifica o método HTTP ( GET ou POST ) a ser usado ao enviar os dados do formulário.
+        GET os dados ficam visiveis 
+        POST os dados se tornam confidencial 
+        <h1>Atributo name</h1>
+        Se  name for omitido os dados não serão enviados
+    </p>
+
+</body>
+</html>

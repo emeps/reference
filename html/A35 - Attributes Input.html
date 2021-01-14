@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attributes</title>
+</head>
+
+<body>
+    <div>
+        <h1>Value</h1>
+        <p> Value atributo especifica uma valor inicial para um campo de entrada</p>
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" value="Insira um Nome">
+    </div>
+    <div>
+        <h1>Readonly</h1>
+        <p>Readonly especifica que um campo de entrada é somente leitura, o campo de entrada não pode ser alterada</p>
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome" name="sobrenome" value="Insira um Sobrenome" readonly>
+    </div>
+    <div>
+        <h1>Disabled</h1>
+        <p>O atributo especifica que um campo deve ser desativadom inutilizavel e não clicével</p>
+        <label for="job">Cargo</label>
+        <input type="text" id="job" name="job" value="Engenheiro" disabled>
+    </div>
+    <div>
+        <div>
+            <h1>Size</h1>
+            <p>Atributo especifica a largura visivel em caracteres de uma campo de entrada. Padrão é 20.</p>
+        </div>
+        <label for="idade">Idade</label>
+        <input type="text" id="idade" name="idade" value="0" size="1">
+    </div>
+    <div>
+        <h1>Maxlenght</h1>
+        <p>Esse atributo especifica a quantidade maxima de caracteres insirido.</p>
+        <label for="tel">Telefone</label>
+        <input type="text" id="tel" name="tel" maxlength="9">
+    </div>
+    <div>
+        <h1>Max e Min</h1>
+        <p>Esse atributo define um tamanho de um intervalo de valores.</p>
+        <label for="idade">Idade Novamente</label>
+        <input type="number" id="idade" max="99" min="20" value="20">
+    </div>
+    <div>
+        <h1>Multiple</h1>
+        <p>Atributo de entrada especifica que a entrada pode aceitar multiplos valores</p>
+        <label for="file">Arquivos Selecionados</label>
+        <input type="file" id="file" name="file" multiple>
+    </div>
+    <div>
+        <h1>Pattern</h1>
+        <p>
+            O atributo especifica um expressão regular com qual o valor do campo de entrada é verificado quando
+            formulario é enviado.
+        </p>
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}"
+            title="Three letter country code">
+    </div>
+    <div>
+        <h1>Placeholder</h1>
+        <p>especifica uma dica curta que descreve o valor esperado no campo de entrada.</p>
+        <label for="tel">Entre com o telefone valido</label>
+        <input type="tel" name="tel" id="tel" placeholder="XX-9-9999-9999"
+            pattern="[0-9]{2}-[0-9]{1}-[0-9]{4}-[0-9]{4}">
+    </div>
+    <div>
+        <h1>Required</h1>
+        <p>especifica que um campo deve ser preenchido obrigatorio antes de ser enviado.</p>
+        <p>especifica uma dica curta que descreve o valor esperado no campo de entrada.</p>
+        <label for="tel">Entre com o telefone valido</label>
+        <input type="tel" name="tel" id="tel" placeholder="XX-9-9999-9999" pattern="[0-9]{2}-[0-9]{1}-[0-9]{4}-[0-9]{4}"
+            required>
+    </div>
+    <div>
+        <h1>Step</h1>
+        <p>Atributo usado para especifica os intervalos de numeros em um campo de entrada</p>
+        <label for="step">Passo</label>
+        <input type="range" min="0" max="15" step="3">
+    </div>
+    <div>
+        <h1>Autofocus</h1>
+        <p>Atributo usado para quando a página de o reload ou carregue, o campo seja focado.</p>
+        <label for="CPF">CPF</label>
+        <input type="number" id="CPF" name="CPF" placeholder="XXX.XXX.XXX-XX"
+            pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" autofocus>
+    </div>
+    <div>
+        <h1>Image width e height</h1>
+        <p>
+            Width e height especifica a altura e a largura de uma imagem carregada. <br>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="image" src="512512.png" alt="Submit" width="48" height="48">
+        </p>
+    </div>
+    <div>
+        <h1>List</h1>
+        <p>Atributo list cria um campo no formato de lista para a seleção das opções</p>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </div>
+    <div>
+        <h1>Autocomplete</h1>
+        <p>Atributo Autocomplete especifica se o formulario ou campo deve ter preenchimento automatico. </p>
+        <form action="/action_page.php" autocomplete="on">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="off"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

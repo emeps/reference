@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Exercicios HTML</h1>
+    </header>
+    <nav>
+        <a href ExerciciosNav="./exercicios/texto1.html"> 00 - texto1</a> |
+        <a href ExerciciosNav="./exercicios/texto2.html"> 01 - texto2</a> |
+        <a href ExerciciosNav="./exercicios/listas.html"> 02 - Listas</a> |
+        <a href ExerciciosNav="./exercicios/tabela.html"> 03 - Tabela</a> |
+        <a href ExerciciosNav="./exercicios/form/form.html"> 04 - Formulario</a> |
+    </nav>
+    <section id="content"></section>
+    <footer>
+        </br>
+        Curso Web Moderno
+    </footer>
+    <script>
+        document.querySelectorAll('[ExerciciosNav]').forEach(link =>{
+            link.onclick = function(e){
+                e.preventDefault();
+                const content = document.querySelector('#content')
+                fetch(link.getAttribute('ExerciciosNav'))
+                .then(resp => resp.text())
+                .then(html => content.innerHTML = html)
+            }
+        });
+    </script>
+</body>
+</html>

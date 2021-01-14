@@ -1,0 +1,70 @@
+<!--
+    Os atributos fornecem informações adicionais aos elementos do HTML
+    Todos os elementos podem ter atributos.
+    São sempre especificado nas tags iniciais, sendo declarado como nome do atributo 
+    pressedido do valor que ela possui.
+-->
+<!--
+    Atributo href
+    A tag <a> refere-se a links para isso passamos a tag e o atributo 
+    href pressedido do endereço da web.
+    <a href = "https://google.com"> Nome do link </a>
+-->
+<!--
+    Atributos de imagem
+    A tag imagem <img> pode conter o atributo src que se refere ao arquivo
+    fonte da imagem.
+        <img src = "imagem.jpg">
+    Dentro da tag <img> podemos referenciar o tamanho da imagem que queremos 
+        <img src = "imagem.jpg" width = "500" height = "600">
+    Passando a largura e a altura da imagem desejada especificada em pixel
+    Também dentro da tag <img> podemos passar o atributo alt, que basicamente
+    atribui um texto alternativo a imagem
+        <img src = "imagem.jpg" alt = "texto alternativo" width = "500" height = "600">
+    O atributo alt pode ser usado quando a imagem não pode ser exibida.
+-->
+<!--
+    Atributo Style
+    O style atributo é usado quando queremos especificar um estilo de um elemento
+    como cor, fonte, tamanho etc...
+    <p style = "color:red"> O paragrafo é vermelho </p>
+-->
+<!--
+    Atributo lang
+    O atributo lang especifica a lingua em que o código foi escrito.
+    Geralmente é utilizado dentro da tag <html> super importante para aplicativos
+    de leitura  de telas.
+        <html lang = "en-US">
+-->
+<!--
+    Atributo title
+    O atributo title é adicionado ao paragrafo <p>. 
+    O valor do atributo será como um dica de ferrameta quando passado mouse.
+        <p title = "Loop"> Loop </p>
+    Uso das aspas
+        <p title = "Loo'p'"> Loop </p>
+        <p title = 'Loo"p"'> Loop </p>
+-->
+<!--
+    Alguns atributos muito usados
+    alt - texto alternativo
+    disabled - especifica que um elemento de entrada deve ser desativado
+    href - endereço URL
+    id - identificação para o elemento
+    src - endereço URL para imagem
+    style - especifica um stylo em CSS para elemento
+    title - adiciona informação extra ao elemento.
+-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Atributos</title>
+    </head>
+    <body>
+        <img src ="https://www.linkedin.com/media-proxy/ext?w=512&h=288&hash=S4CGRzcLjuBH7S9XSM3p8aoPbhs%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6plxVUzgUv5K_PrkC9q0RIUJDPBy-gXCWu-NKfYXDpfcXYZLOkoVsTcC0FmQwxeu-1QTapG43ma90" alt="HTML Learning" width="512" height="288">
+        <p><a style = "background-color: blueviolet;"title="Google" href="https://google.com"> Esse link vai para o google</a></p>
+        <p title = "Looop'ing'" style="color:red"> Pacmentemente</p>
+    </body>
+    </html>
+

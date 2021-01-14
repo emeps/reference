@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ID</title>
+    <style>
+        #title_1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+            text-align: center;
+            padding: 40px;
+            background-color: transparent;
+            color: white;
+        }
+        #text_1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+            text-align: center;
+            padding: 40px;
+            background-color: transparent;
+            color: white;
+        }
+        div{
+            border: 5px solid violet;
+            padding: 25px;
+            margin: 25px;      
+            background-color:aquamarine;                 
+            background-image: url('512512.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #myHeader{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+            text-align: center;
+            padding: 40px;
+            background-color: transparent;
+            color: white;
+        }
+        .city{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 35px;
+            text-align: center;
+            padding: 40px;
+            background-color: transparent;
+            color: white;
+        }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            text-align: center;
+            padding: 20px;
+            background-color:transparent;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="title_1">Atributo ID</h1>
+        <p id="text_1">No CSS, para selecionar um elemento com um ID específico, escreva um caractere de hash (#), seguido pelo ID do elemento</p>
+    </div>
+    <div>
+        <p id="text_1">Um elemento HTML pode ter apenas um ID exclusivo que pertença a esse elemento, enquanto um nome de classe pode ser usado por vários elementos</p>
+        <!-- A unique element -->
+        <h1 id="myHeader">My Cities</h1>
+
+        <!-- Multiple similar elements -->
+        <h2 class="city">London</h2>
+        <p>London is the capital of England.</p>
+
+        <h2 class="city">Paris</h2>
+        <p>Paris is the capital of France.</p>
+
+        <h2 class="city">Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <div>
+        <a href="#title_1" id="title_1">Jump to begin</a>
+        <button onclick="displayResult()"> Change text</button>
+    </div>
+
+    <script>
+        function displayResult(){
+            document.getElementById("title_1").innerHTML = "Tenha um bom dia!";
+        }
+    </script>
+</body>
+</html>

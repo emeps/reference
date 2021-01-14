@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Class</title>
+    <style>
+        .city{
+            background-color: black;
+            color: blanchedalmond;
+            margin: 20px;
+            padding: 20px;
+        }
+        span.sent{
+            font-size: 120%;
+            color: red;
+        }
+        .esp{
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England</p>
+    </div>
+    <div class="city">
+        <h2>Brazilia</h2>
+        <p>Brazilia is the capital of Brazil</p>
+    </div>
+    <div class="city">
+        <h2>Paris</h2>
+        <p>França is not capital of Paris</p>
+    </div>
+
+    <h1>EU <span class="sent">estou com</span> muito sono</h1>
+
+    <h2 class="esp">para selecionar elementos com uma classe específica, escreva um caractere de ponto (.), Seguido pelo nome da classe</h2>
+
+    <h2 class="city main">Multiplas classes tambem pode ter</h2>
+
+    <button onclick="myFunc()">Auto destruição</button> 
+
+    <script>
+        function myFunc(){
+            var x = document.getElementsByClassName("city");
+            for(var i = 0; 0 < x.length; i++ ){
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

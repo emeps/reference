@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        #img_1{
+            width: 700px;
+            height: 530px;
+            border: 10px double #98002e;
+        }
+        #chicken{
+            background-color: blueviolet;
+            padding: 25px;
+            margin: 15px;
+            border: 5px double #611100;
+        }
+        body{
+            background-image: url('https://image.freepik.com/free-vector/gradient-geometric-shape-background_78532-374.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+    </style>
+</head>
+<body>
+    <!--Adicionando imagem Parte1-->
+    <img id="img_1" src="/HTML/img/25601600.jpg" alt="Isso é uma image." >
+    <a href="https://facebook.com" target="_blank">Facebook Chicken
+        <img id = "chicken"src="/HTML/img/512512.png" alt="Chicken">
+    </a>
+    <p><img src="/HTML/img/512512.png" alt="Chicken" style="float:right;">Texto decorativo</p>
+    <!--Mapeando uma imagem Parte2-->
+    <img src="/HTML/img/512512.png" alt="Chicken" usemap="#512map">
+    <map name="512map">
+        <area shape="rect" coords="100,100,300,300" href="/HTML/A12 - CSS.html" alt="Chicken">
+    </map>
+    <!--Adicionando Plano de fundo como imagem Parte3-->
+    <div style="background-image: url('https://image.freepik.com/free-vector/abstract-yellow-comic-zoom_1409-923.jpg'); background-repeat: no-repeat;">
+        dvi é uma tag para quebra de seção <br>
+        utilizado muito para separar elementos <br>
+        Muito legal né
+    </div>
+    <!--Reproduzindo em diferentes telas Picture parte4-->
+    <picture>
+        <source media="(min-width:300px)"srcset="">
+        <source media="(min-width:600px)"srcset="https://i.redd.it/2t1nol6ndu641.jpg">
+        <img src="/HTML/img/512512.png">
+    </picture>
+</body>
+</html>
