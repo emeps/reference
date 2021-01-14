@@ -1,0 +1,26 @@
+**Instalando o modulo e salvando a dependencia no package.json**
+npm install --save Modulo 
+
+**Dentro do arquivo json**
+**versão do modulo**
+"^0.17.1"
+"Tipo de alteração(^)AtualizaMajor(0).AtualizaMinor(17).Fixeds(1)"
+
+**Quando temos o acento circunflexo ^:**
+Indica alteração na AtualizaMinor.
+"^0.15.6"
+
+**Quando temos o acento tio ~:**
+Indica alteração no Fixeds.
+"~0.15.1"
+
+**Quando não temos nenhum acento:**
+Indica a aquela versão
+"0.15.1"
+
+npm i --save-dev axios@0.15.1 -E
+--save-dev: Dependencias utilizadas somente durante o desenvolvimento.
+axios@versão: Indica qual a versão quer seja instalada.
+-E: Indica que tem que ser aquela versão EXATA passada pelo @
+
+package-lock.json é um arquivo que tem a descrição exata de todos os utilitarios utilizado no projeto.
